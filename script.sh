@@ -38,7 +38,7 @@ apt-get -y install zsh htop
 # Install MySQL Server in a Non-Interactive mode. Default root password will be "root"
 echo "mysql-server-5.6 mysql-server/root_password password root" | sudo debconf-set-selections
 echo "mysql-server-5.6 mysql-server/root_password_again password root" | sudo debconf-set-selections
-apt-get -y install mysql-server-5.6
+apt-get -y install mysql-server
 
 
 # Run the MySQL Secure Installation wizard
