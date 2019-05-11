@@ -1,6 +1,6 @@
 # LAMP_bash_ubuntu
 
-This script will install LAMP on the ubutu server
+This script will install LAMP on the ubuntu server
 
 Installation:
 
