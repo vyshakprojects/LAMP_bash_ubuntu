@@ -2,6 +2,12 @@
 
 This script will install LAMP on the ubutu server
 
+Installation:
+
+chmod 755 script.sh
+
+./script.h
+
 #Author Information
 
 - Name: Vyshak M
