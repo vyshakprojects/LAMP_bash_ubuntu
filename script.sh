@@ -47,6 +47,11 @@ mysql_secure_installation
 sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /etc/mysql/my.cnf
 mysql -uroot -p -e 'USE mysql; UPDATE `user` SET `Host`="%" WHERE `User`="root" AND `Host`="localhost"; DELETE FROM `user` WHERE `Host` != "%" AND `User`="root"; FLUSH PRIVILEGES;'
 
+# installng PHP
+apt install php -y
+
+# creating info.php page to check php working.
+echo "<? phpinfo(); ?>" >> /var/www/html/info.php
 
 # enabling and restarting the required services
 service mysql restart
